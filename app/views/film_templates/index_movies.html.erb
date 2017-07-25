@@ -7,7 +7,11 @@
 <% @list_of_films.each do |the_movie| %>
   <div class="thumbnail">
     <img src="<%= the_movie.image_url %>">
-
+    <a> <%= the_movie.title%> </a>
+    <a> <%= the_movie.year%> </a>
+    <a> <%= the_movie.duration%> </a>
+    <a> <%= the_movie.description%> </a>
+    
     <div class="caption">
       <a href="/movies/<%= the_movie.id %>" class="btn btn-default btn-block">
         Show details
