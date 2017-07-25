@@ -1,5 +1,11 @@
 class FilmsController < ApplicationController
     
+    def index_all
+    
+    render("film_templates/index_all.html.erb")
+    
+    end
+    
     def index_movies
         @list_of_films = Movie.order(:created_at => :desc)
         

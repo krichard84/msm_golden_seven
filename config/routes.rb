@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get("/", { :controller => "films", :action => "index_movies" })
+  get("/", { :controller => "films", :action => "index_all" })
   
   #CREATE
   
