@@ -1,0 +1,31 @@
+<h1>Movie Details</h1>
+
+<img src="<%= @movie.image_url %>">
+
+<h6> <%= @movie.image_url%> </h6>
+
+<h2><%= @movie.title %></h2>
+
+<h4><%= @movie.year %></h4>
+
+<h6><%= @movie.duration %> minutes </h6>
+
+<p>
+  <%= @movie.description %>
+</p>
+
+<p>
+  <%= time_ago_in_words(@movie.created_at) %> ago
+</p>
+
+<a href="/movies" class="btn btn-default">
+  Go back
+</a>
+
+<a href="/movies/<%= @movie.id %>/edit" class="btn btn-default">
+  Edit movie
+</a>
+
+<a href="/delete_movie/<%= @movie.id %>" class="btn btn-default">
+  Delete movie
+</a>
